@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2868c6a6d4f7405e8819536e2ab0530b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css"/>
+    
+            <style>
+                #export {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    z-index: 999;
+                    background: white;
+                    color: black;
+                    padding: 6px;
+                    border-radius: 4px;
+                    font-family: 'Helvetica Neue';
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-decoration: none;
+                    top: 90px;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2868c6a6d4f7405e8819536e2ab0530b" ></div>
+        
+    <a href='#' id='export'>Export</a>
+</body>
+<script>    
+    
+            var map_2868c6a6d4f7405e8819536e2ab0530b = L.map(
+                "map_2868c6a6d4f7405e8819536e2ab0530b",
+                {
+                    center: [28.207609, 79.82666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c39e653a00284c46937da072d5af047c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var marker_de42de61173a44a9bdb268948fcdd18b = L.marker(
+                [16.5541242039864, 79.9162029824412],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_40e6246d9be7466f830edc869058c5ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ce2c36afca744d9a6734551c0aca657 = $(`<div id="html_3ce2c36afca744d9a6734551c0aca657" style="width: 100.0%; height: 100.0%;">Andhra Pradesh</div>`)[0];
+            popup_40e6246d9be7466f830edc869058c5ea.setContent(html_3ce2c36afca744d9a6734551c0aca657);
+        
+
+        marker_de42de61173a44a9bdb268948fcdd18b.bindPopup(popup_40e6246d9be7466f830edc869058c5ea)
+        ;
+
+        
+    
+    
+            var marker_5b57e5b2f7e3445884659c3fa51359ec = L.marker(
+                [27.7257654151862, 94.5453268105613],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_7f3b0a5744aa45b7864667cea6afd466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f647ff75fd744fcd8af2a7039253f614 = $(`<div id="html_f647ff75fd744fcd8af2a7039253f614" style="width: 100.0%; height: 100.0%;">Arunachal Pradesh</div>`)[0];
+            popup_7f3b0a5744aa45b7864667cea6afd466.setContent(html_f647ff75fd744fcd8af2a7039253f614);
+        
+
+        marker_5b57e5b2f7e3445884659c3fa51359ec.bindPopup(popup_7f3b0a5744aa45b7864667cea6afd466)
+        ;
+
+        
+    
+    
+            var marker_486dd6997a9a4cdda0485c06af404fd2 = L.marker(
+                [26.3213408919157, 92.657310355725],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_a0901eeb4e0b456d8996f9998614cd78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adc4d3a3111e46dfac26f1c1f39c7f24 = $(`<div id="html_adc4d3a3111e46dfac26f1c1f39c7f24" style="width: 100.0%; height: 100.0%;">Assam</div>`)[0];
+            popup_a0901eeb4e0b456d8996f9998614cd78.setContent(html_adc4d3a3111e46dfac26f1c1f39c7f24);
+        
+
+        marker_486dd6997a9a4cdda0485c06af404fd2.bindPopup(popup_a0901eeb4e0b456d8996f9998614cd78)
+        ;
+
+        
+    
+    
+            var marker_84a7419a1c9a40629ab62c5af85b898e = L.marker(
+                [25.7713935437539, 85.6367740131486],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_8d519477ff9d4059a9424d826d931c5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b08be9370c14529857ab49b9ba5c877 = $(`<div id="html_1b08be9370c14529857ab49b9ba5c877" style="width: 100.0%; height: 100.0%;">Bihar</div>`)[0];
+            popup_8d519477ff9d4059a9424d826d931c5f.setContent(html_1b08be9370c14529857ab49b9ba5c877);
+        
+
+        marker_84a7419a1c9a40629ab62c5af85b898e.bindPopup(popup_8d519477ff9d4059a9424d826d931c5f)
+        ;
+
+        
+    
+    
+            var marker_a3a7ee08c5154435b6772725817245b7 = L.marker(
+                [21.555738582984, 82.1250933359442],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_bba4febbfde94d3685008da550e3dbc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81f55ab1cf50439d92f8790feaeab704 = $(`<div id="html_81f55ab1cf50439d92f8790feaeab704" style="width: 100.0%; height: 100.0%;">Chhattisgarh</div>`)[0];
+            popup_bba4febbfde94d3685008da550e3dbc2.setContent(html_81f55ab1cf50439d92f8790feaeab704);
+        
+
+        marker_a3a7ee08c5154435b6772725817245b7.bindPopup(popup_bba4febbfde94d3685008da550e3dbc2)
+        ;
+
+        
+    
+    
+            var marker_c09964c327b648b9a47b23e12fad0ef7 = L.marker(
+                [28.6459443, 77.12804518],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_1ce4d48b5ad048b0a298081b655dc947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_683ca87aefe54e83bef9751e66812542 = $(`<div id="html_683ca87aefe54e83bef9751e66812542" style="width: 100.0%; height: 100.0%;">Delhi</div>`)[0];
+            popup_1ce4d48b5ad048b0a298081b655dc947.setContent(html_683ca87aefe54e83bef9751e66812542);
+        
+
+        marker_c09964c327b648b9a47b23e12fad0ef7.bindPopup(popup_1ce4d48b5ad048b0a298081b655dc947)
+        ;
+
+        
+    
+    
+            var marker_6185b41847ce4b75ba2dd51a52d89745 = L.marker(
+                [15.3935040429933, 73.8660162584672],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_25deb3cdcf874ebc8779f0612159f7d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0156ea00bd8f4de28bfa223b60337730 = $(`<div id="html_0156ea00bd8f4de28bfa223b60337730" style="width: 100.0%; height: 100.0%;">Goa</div>`)[0];
+            popup_25deb3cdcf874ebc8779f0612159f7d2.setContent(html_0156ea00bd8f4de28bfa223b60337730);
+        
+
+        marker_6185b41847ce4b75ba2dd51a52d89745.bindPopup(popup_25deb3cdcf874ebc8779f0612159f7d2)
+        ;
+
+        
+    
+    
+            var marker_c6bf555488a44b67943d12ff18101e37 = L.marker(
+                [22.3744058495804, 72.195747388839],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_c2447264c55949c2b3483dc93a601235 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed07be0ce066486593c9aca6bb43aac2 = $(`<div id="html_ed07be0ce066486593c9aca6bb43aac2" style="width: 100.0%; height: 100.0%;">Gujarat</div>`)[0];
+            popup_c2447264c55949c2b3483dc93a601235.setContent(html_ed07be0ce066486593c9aca6bb43aac2);
+        
+
+        marker_c6bf555488a44b67943d12ff18101e37.bindPopup(popup_c2447264c55949c2b3483dc93a601235)
+        ;
+
+        
+    
+    
+            var marker_2b25ecc974cc40958ceffb1fc01ac311 = L.marker(
+                [29.1956162763838, 76.5212374296184],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_bfea4df74ef142ea911d65fdc91b9794 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cebca4756e84676a336b88f1355c1cf = $(`<div id="html_0cebca4756e84676a336b88f1355c1cf" style="width: 100.0%; height: 100.0%;">Haryana</div>`)[0];
+            popup_bfea4df74ef142ea911d65fdc91b9794.setContent(html_0cebca4756e84676a336b88f1355c1cf);
+        
+
+        marker_2b25ecc974cc40958ceffb1fc01ac311.bindPopup(popup_bfea4df74ef142ea911d65fdc91b9794)
+        ;
+
+        
+    
+    
+            var marker_b84274fd94834ee39ae6eee173e46ef6 = L.marker(
+                [31.6494688754927, 76.8556181354075],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_3f3906dc347d468a8d5de930a057ccd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b705a6372ed74c0397d4a93ac8f10298 = $(`<div id="html_b705a6372ed74c0397d4a93ac8f10298" style="width: 100.0%; height: 100.0%;">Himachal Pradesh</div>`)[0];
+            popup_3f3906dc347d468a8d5de930a057ccd9.setContent(html_b705a6372ed74c0397d4a93ac8f10298);
+        
+
+        marker_b84274fd94834ee39ae6eee173e46ef6.bindPopup(popup_3f3906dc347d468a8d5de930a057ccd9)
+        ;
+
+        
+    
+    
+            var marker_80e50668826d4b81b8b356afc0aa73eb = L.marker(
+                [33.6516990002294, 75.0006306164316],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_758ea078950c4151a73e9c6663bef999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f965317daa884a56a575f9c991d3ec2e = $(`<div id="html_f965317daa884a56a575f9c991d3ec2e" style="width: 100.0%; height: 100.0%;">Jammu and Kashmir</div>`)[0];
+            popup_758ea078950c4151a73e9c6663bef999.setContent(html_f965317daa884a56a575f9c991d3ec2e);
+        
+
+        marker_80e50668826d4b81b8b356afc0aa73eb.bindPopup(popup_758ea078950c4151a73e9c6663bef999)
+        ;
+
+        
+    
+    
+            var marker_9812e9af10fc4c4f9e9587088ec0a53d = L.marker(
+                [23.7675055467456, 85.8599624644169],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_8d0a499d05ac44beaee434f0df7c7dae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0110d83e770c4095898e41a3ae8da3a7 = $(`<div id="html_0110d83e770c4095898e41a3ae8da3a7" style="width: 100.0%; height: 100.0%;">Jharkhand</div>`)[0];
+            popup_8d0a499d05ac44beaee434f0df7c7dae.setContent(html_0110d83e770c4095898e41a3ae8da3a7);
+        
+
+        marker_9812e9af10fc4c4f9e9587088ec0a53d.bindPopup(popup_8d0a499d05ac44beaee434f0df7c7dae)
+        ;
+
+        
+    
+    
+            var marker_e55dae6f569046ac8d2b15d5ac9ca770 = L.marker(
+                [14.3698170894678, 76.29962467945],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_6d783f796c4749c78f649801062de5b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d54d3c40152c42808d9a7cd90b7f3c40 = $(`<div id="html_d54d3c40152c42808d9a7cd90b7f3c40" style="width: 100.0%; height: 100.0%;">Karnataka</div>`)[0];
+            popup_6d783f796c4749c78f649801062de5b0.setContent(html_d54d3c40152c42808d9a7cd90b7f3c40);
+        
+
+        marker_e55dae6f569046ac8d2b15d5ac9ca770.bindPopup(popup_6d783f796c4749c78f649801062de5b0)
+        ;
+
+        
+    
+    
+            var marker_498e482b25154a1f944f14fa5f491973 = L.marker(
+                [10.326706356099, 76.2177062100637],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_8a9e87b531a34a2da4989065b612804e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9eaee29aebd44d828a3a47185ff3475a = $(`<div id="html_9eaee29aebd44d828a3a47185ff3475a" style="width: 100.0%; height: 100.0%;">Kerala</div>`)[0];
+            popup_8a9e87b531a34a2da4989065b612804e.setContent(html_9eaee29aebd44d828a3a47185ff3475a);
+        
+
+        marker_498e482b25154a1f944f14fa5f491973.bindPopup(popup_8a9e87b531a34a2da4989065b612804e)
+        ;
+
+        
+    
+    
+            var marker_d335e8fe6fd44c36913dd373130ff7dd = L.marker(
+                [23.6356052026128, 78.0824921329296],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_d5ee91fcb03a44d28b9ba317032fe75a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2f0e8beb40b47549786ced9ec92a759 = $(`<div id="html_a2f0e8beb40b47549786ced9ec92a759" style="width: 100.0%; height: 100.0%;">Madhya Pradesh</div>`)[0];
+            popup_d5ee91fcb03a44d28b9ba317032fe75a.setContent(html_a2f0e8beb40b47549786ced9ec92a759);
+        
+
+        marker_d335e8fe6fd44c36913dd373130ff7dd.bindPopup(popup_d5ee91fcb03a44d28b9ba317032fe75a)
+        ;
+
+        
+    
+    
+            var marker_f8b11369ca214f4883c688ab1d36c403 = L.marker(
+                [19.3925156129253, 75.270554473907],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_6912918e27224a9f918a32fd808b0c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56536aadf0d64d7793562779ec2e75d1 = $(`<div id="html_56536aadf0d64d7793562779ec2e75d1" style="width: 100.0%; height: 100.0%;">Maharashtra</div>`)[0];
+            popup_6912918e27224a9f918a32fd808b0c5a.setContent(html_56536aadf0d64d7793562779ec2e75d1);
+        
+
+        marker_f8b11369ca214f4883c688ab1d36c403.bindPopup(popup_6912918e27224a9f918a32fd808b0c5a)
+        ;
+
+        
+    
+    
+            var marker_45f3192390ca4470ae86fe540b295ace = L.marker(
+                [24.7389748936655, 93.8644934953284],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_baf311b43edb401a954bf7161d4dfc7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36df0057a82b4c13bbc6decf1ff95023 = $(`<div id="html_36df0057a82b4c13bbc6decf1ff95023" style="width: 100.0%; height: 100.0%;">Manipur</div>`)[0];
+            popup_baf311b43edb401a954bf7161d4dfc7b.setContent(html_36df0057a82b4c13bbc6decf1ff95023);
+        
+
+        marker_45f3192390ca4470ae86fe540b295ace.bindPopup(popup_baf311b43edb401a954bf7161d4dfc7b)
+        ;
+
+        
+    
+    
+            var marker_3e296208088c46b5b8ea01342b06ee12 = L.marker(
+                [25.4803673647655, 91.2375106953515],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_48dece74da4c416d9fda3dbb0e7ee512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d6fd7969454453a9500c76a565a0d4e = $(`<div id="html_0d6fd7969454453a9500c76a565a0d4e" style="width: 100.0%; height: 100.0%;">Meghalaya</div>`)[0];
+            popup_48dece74da4c416d9fda3dbb0e7ee512.setContent(html_0d6fd7969454453a9500c76a565a0d4e);
+        
+
+        marker_3e296208088c46b5b8ea01342b06ee12.bindPopup(popup_48dece74da4c416d9fda3dbb0e7ee512)
+        ;
+
+        
+    
+    
+            var marker_31da0e2b76114277a05946dac9499888 = L.marker(
+                [23.458356591057, 92.8166190062036],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_ecf909a591d54dcbb0ae7d18e941a78c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c531ee1e1db446d4b9c511759b67f5ec = $(`<div id="html_c531ee1e1db446d4b9c511759b67f5ec" style="width: 100.0%; height: 100.0%;">Mizoram</div>`)[0];
+            popup_ecf909a591d54dcbb0ae7d18e941a78c.setContent(html_c531ee1e1db446d4b9c511759b67f5ec);
+        
+
+        marker_31da0e2b76114277a05946dac9499888.bindPopup(popup_ecf909a591d54dcbb0ae7d18e941a78c)
+        ;
+
+        
+    
+    
+            var marker_97d2b0c5a89647e09027beab18fb8b59 = L.marker(
+                [26.0618570761974, 94.3257526028899],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_b71a3ed45d8d4c7f9bd895d1a4329b97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b7697cbf1504bf592aed849d1c04764 = $(`<div id="html_0b7697cbf1504bf592aed849d1c04764" style="width: 100.0%; height: 100.0%;">Nagaland</div>`)[0];
+            popup_b71a3ed45d8d4c7f9bd895d1a4329b97.setContent(html_0b7697cbf1504bf592aed849d1c04764);
+        
+
+        marker_97d2b0c5a89647e09027beab18fb8b59.bindPopup(popup_b71a3ed45d8d4c7f9bd895d1a4329b97)
+        ;
+
+        
+    
+    
+            var marker_3d8f8bd04ea3439f8d74b17118c94478 = L.marker(
+                [20.5295973587413, 84.983965836427],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_6f0f37780e0f4683b904f1300a2ba0cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_447a1e4c65434aa9bad3869f274a0107 = $(`<div id="html_447a1e4c65434aa9bad3869f274a0107" style="width: 100.0%; height: 100.0%;">Odisha</div>`)[0];
+            popup_6f0f37780e0f4683b904f1300a2ba0cd.setContent(html_447a1e4c65434aa9bad3869f274a0107);
+        
+
+        marker_3d8f8bd04ea3439f8d74b17118c94478.bindPopup(popup_6f0f37780e0f4683b904f1300a2ba0cd)
+        ;
+
+        
+    
+    
+            var marker_01a7a30b25974643b3197d0285d48c48 = L.marker(
+                [30.9120614918165, 75.452952256905],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_6cac198c0cdc4de7abea7f18196d66d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fa8c6f404de42dd9d5d24224c0b8d52 = $(`<div id="html_1fa8c6f404de42dd9d5d24224c0b8d52" style="width: 100.0%; height: 100.0%;">Punjab</div>`)[0];
+            popup_6cac198c0cdc4de7abea7f18196d66d9.setContent(html_1fa8c6f404de42dd9d5d24224c0b8d52);
+        
+
+        marker_01a7a30b25974643b3197d0285d48c48.bindPopup(popup_6cac198c0cdc4de7abea7f18196d66d9)
+        ;
+
+        
+    
+    
+            var marker_6c28e2d2893249f7b6596c4b494c4a69 = L.marker(
+                [26.493281966067, 75.2253947542206],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_58a43c8775a14a45b51589957ac18500 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c81c9248791e4419b2e160713d404bbd = $(`<div id="html_c81c9248791e4419b2e160713d404bbd" style="width: 100.0%; height: 100.0%;">Rajasthan</div>`)[0];
+            popup_58a43c8775a14a45b51589957ac18500.setContent(html_c81c9248791e4419b2e160713d404bbd);
+        
+
+        marker_6c28e2d2893249f7b6596c4b494c4a69.bindPopup(popup_58a43c8775a14a45b51589957ac18500)
+        ;
+
+        
+    
+    
+            var marker_3988e0c6ecdf460c856e673fdb24ad10 = L.marker(
+                [27.3376797963507, 88.5123052198473],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_72f5c1b516a949d5b935f616d3f5a0fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cce5467ee744972b9e176cb6e09429c = $(`<div id="html_7cce5467ee744972b9e176cb6e09429c" style="width: 100.0%; height: 100.0%;">Sikkim</div>`)[0];
+            popup_72f5c1b516a949d5b935f616d3f5a0fd.setContent(html_7cce5467ee744972b9e176cb6e09429c);
+        
+
+        marker_3988e0c6ecdf460c856e673fdb24ad10.bindPopup(popup_72f5c1b516a949d5b935f616d3f5a0fd)
+        ;
+
+        
+    
+    
+            var marker_66ba2fa5486f4549babfe8b5f3ecdc2f = L.marker(
+                [11.1597113289349, 78.7627465226582],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_42d8db31eb3f4588a12f9811bb0d12fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_587cf62fac61416db7db083cdf2e0f75 = $(`<div id="html_587cf62fac61416db7db083cdf2e0f75" style="width: 100.0%; height: 100.0%;">Tamil Nadu</div>`)[0];
+            popup_42d8db31eb3f4588a12f9811bb0d12fa.setContent(html_587cf62fac61416db7db083cdf2e0f75);
+        
+
+        marker_66ba2fa5486f4549babfe8b5f3ecdc2f.bindPopup(popup_42d8db31eb3f4588a12f9811bb0d12fa)
+        ;
+
+        
+    
+    
+            var marker_c7e131c517074dcaacdc4e1dea49982d = L.marker(
+                [23.7093048498124, 91.6587131394332],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_50b6a34c6b624972a2457da00a41ccfe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca18ef62b4684f9db5c3a7d0e9810c10 = $(`<div id="html_ca18ef62b4684f9db5c3a7d0e9810c10" style="width: 100.0%; height: 100.0%;">Tripura</div>`)[0];
+            popup_50b6a34c6b624972a2457da00a41ccfe.setContent(html_ca18ef62b4684f9db5c3a7d0e9810c10);
+        
+
+        marker_c7e131c517074dcaacdc4e1dea49982d.bindPopup(popup_50b6a34c6b624972a2457da00a41ccfe)
+        ;
+
+        
+    
+    
+            var marker_bf09da864e3b47c6ad81ffd38e7e89fc = L.marker(
+                [27.0691634319156, 80.6591924436182],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_38b8e0fc1a5743b387c1bbf6e639fc72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b6cba93982c44f4ae4f30d244ebf0c8 = $(`<div id="html_1b6cba93982c44f4ae4f30d244ebf0c8" style="width: 100.0%; height: 100.0%;">Uttar Pradesh</div>`)[0];
+            popup_38b8e0fc1a5743b387c1bbf6e639fc72.setContent(html_1b6cba93982c44f4ae4f30d244ebf0c8);
+        
+
+        marker_bf09da864e3b47c6ad81ffd38e7e89fc.bindPopup(popup_38b8e0fc1a5743b387c1bbf6e639fc72)
+        ;
+
+        
+    
+    
+            var marker_e93cf8dbc2df4e81a9121239dc6260dd = L.marker(
+                [29.9102559408558, 78.8456321914626],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_2c9f13c2416d4eb09cc9aa12748a2a91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a6c3a9a7ac04574a1fb2dedbf343cb2 = $(`<div id="html_6a6c3a9a7ac04574a1fb2dedbf343cb2" style="width: 100.0%; height: 100.0%;">Uttarakhand</div>`)[0];
+            popup_2c9f13c2416d4eb09cc9aa12748a2a91.setContent(html_6a6c3a9a7ac04574a1fb2dedbf343cb2);
+        
+
+        marker_e93cf8dbc2df4e81a9121239dc6260dd.bindPopup(popup_2c9f13c2416d4eb09cc9aa12748a2a91)
+        ;
+
+        
+    
+    
+            var marker_df9cba800bc54e96a1f400b24e67e9b3 = L.marker(
+                [23.4213431788952, 88.1495960925151],
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+        var popup_06a24550e8304de4b261a0492797bd46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b93eac6a67a420181eb291003535fcf = $(`<div id="html_7b93eac6a67a420181eb291003535fcf" style="width: 100.0%; height: 100.0%;">West Bengal</div>`)[0];
+            popup_06a24550e8304de4b261a0492797bd46.setContent(html_7b93eac6a67a420181eb291003535fcf);
+        
+
+        marker_df9cba800bc54e96a1f400b24e67e9b3.bindPopup(popup_06a24550e8304de4b261a0492797bd46)
+        ;
+
+        
+    
+    
+            var options = {
+              position: "topleft",
+              draw: {},
+              edit: {},
+            }
+            // FeatureGroup is to store editable layers.
+            var drawnItems = new L.featureGroup().addTo(
+                map_2868c6a6d4f7405e8819536e2ab0530b
+            );
+            options.edit.featureGroup = drawnItems;
+            var draw_control_91197e65ff834d8b91e09d53efaa6a2d = new L.Control.Draw(
+                options
+            ).addTo( map_2868c6a6d4f7405e8819536e2ab0530b );
+            map_2868c6a6d4f7405e8819536e2ab0530b.on(L.Draw.Event.CREATED, function(e) {
+                var layer = e.layer,
+                    type = e.layerType;
+                var coords = JSON.stringify(layer.toGeoJSON());
+                layer.on('click', function() {
+                    alert(coords);
+                    console.log(coords);
+                });
+                drawnItems.addLayer(layer);
+             });
+            map_2868c6a6d4f7405e8819536e2ab0530b.on('draw:created', function(e) {
+                drawnItems.addLayer(e.layer);
+            });
+            
+            document.getElementById('export').onclick = function(e) {
+                var data = drawnItems.toGeoJSON();
+                var convertedData = 'text/json;charset=utf-8,'
+                    + encodeURIComponent(JSON.stringify(data));
+                document.getElementById('export').setAttribute(
+                    'href', 'data:' + convertedData
+                );
+                document.getElementById('export').setAttribute(
+                    'download', "data.geojson"
+                );
+            }
+            
+        
+    
+            var measure_control_c80d62ba23af4824b1685bfbff5b9e25 = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "miles", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_2868c6a6d4f7405e8819536e2ab0530b.addControl(measure_control_c80d62ba23af4824b1685bfbff5b9e25);
+
+        
+    
+            var tile_layer_241835babd1649f4bab8f99d575e7334 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var tile_layer_4ed79ce81db443e18253d9c0cf3dd92a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var tile_layer_447be90531ce4d42aad975f90a775c03 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var tile_layer_656bc463808e4e4696e8e9cf4e11b813 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var tile_layer_e2673d71dbe54ce9ab0504375601e182 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var feature_group_00fec3951d144c958c3252c44dd0148b = L.featureGroup(
+                {}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+        
+    
+            var heat_map_e47be5e98ce8424f8601eda73ad73944 = L.heatLayer(
+                [[28.19933304846293, 79.78707833789761, 0.9808934283396136], [28.201385091133968, 79.84996810858625, 0.9984503596353483], [28.16220296676673, 79.81317822871047, 0.9835326732466567], [28.211332892787944, 79.81014448983501, 1.014808718701635], [28.20981800603362, 79.8113022082089, 0.964597241317419], [28.206599279497354, 79.81595506898357, 0.9851589727272823], [28.22531655546524, 79.84396368493567, 0.9844085839361759], [28.165475480010702, 79.85824390138455, 0.9845039339227688], [28.188265561606993, 79.81327725539882, 0.9786840548103828], [28.210110602138144, 79.80699494681483, 1.0032165188933315], [28.232069859789416, 79.82079415804839, 0.9709900554402024], [28.213047326039952, 79.84790461752381, 0.9646424264293687], [28.196111674460116, 79.82458133891627, 0.9661310306869764], [28.198336991707247, 79.85890761892178, 0.9954052098079487], [28.23534875944004, 79.83325643804947, 0.9900875712457642], [28.176112467274596, 79.79884197271319, 0.9981917797579818], [28.193777228762954, 79.79889187501821, 1.0039452633969659], [28.23508652284959, 79.81692041610864, 0.9838459389721796], [28.207796579692403, 79.83285798083064, 1.0037497541858607], [28.210293113655265, 79.81751960132777, 1.0301370894136106], [28.200384239027038, 79.81445347379496, 1.0034874441408028], [28.204766677059773, 79.83881255168988, 0.9984920071034357], [28.218735115329487, 79.82205248339177, 0.9948365993493675], [28.212057996039523, 79.82200544256888, 1.02296534817151], [28.197812948055006, 79.82312619354217, 0.9773055999704098], [28.21952562544713, 79.79166161650569, 0.9810143973284001], [28.18607047110355, 79.83609048166255, 1.0235250107651415], [28.223818336253423, 79.84116733166888, 0.9756056633883617], [28.191741221435702, 79.80937695490134, 1.0399955377520163], [28.17041077352125, 79.83415354368069, 1.0043624851953146], [28.195012728486322, 79.83099085519275, 0.9880773428201822], [28.16078428694348, 79.81381888104143, 1.0068521107909707], [28.23687780539301, 79.82187992385586, 0.9786679094516736], [28.219659531947286, 79.80801135844072, 1.0241458576897546], [28.158774476927483, 79.80407865028616, 1.0174457163664405], [28.1921182676594, 79.84200228681458, 0.968828717717539], [28.205439856761778, 79.8270369507767, 0.9945271592074134], [28.188197526714358, 79.79042018274609, 0.9917040435246408], [28.178268957758803, 79.82560112633031, 0.983102304853206], [28.229213789075825, 79.82726598061525, 0.9878833803996542], [28.21855612985174, 79.79304032621883, 1.0010613964543027], [28.229454110354084, 79.8259987173695, 1.0064708302475405], [28.20039802518148, 79.80125381169421, 0.9991004723705406], [28.216743055228104, 79.86434008125424, 0.9947266760346043], [28.22624295532493, 79.81039043954281, 0.9859131024822734], [28.236532309170496, 79.82724959364148, 0.9592878372348408], [28.219873389832763, 79.83564463207296, 0.9847212159735115], [28.197860800767813, 79.85239111345533, 0.9576767907965305], [28.208690244880955, 79.83968455173918, 0.989396886522271], [28.193217181284712, 79.76087201873183, 0.9993108208545599], [28.20404211974249, 79.84271916661743, 0.9764679952763439], [28.17966593823998, 79.85473440638484, 0.9941031943625342], [28.178057922276473, 79.85026249874386, 0.9592698885182692], [28.210911211293038, 79.8641539205684, 0.9894699802277582], [28.21009239291975, 79.81982090949286, 0.9991828195027034], [28.205423626387716, 79.8517355761778, 1.01105524522155], [28.21011484896987, 79.82557547970424, 0.9793143347292989], [28.196400991478903, 79.79862226431598, 0.9648259530376858], [28.195043753167187, 79.80437190903868, 0.9891274210520488], [28.232228209502754, 79.85015896592685, 1.0176768214933558], [28.216490657843107, 79.83283053317903, 1.0109998629102341], [28.23109324195518, 79.81999713077828, 0.9987085130591087], [28.223070660179715, 79.8151898176709, 1.0008939632466878], [28.184042321474852, 79.82321807041184, 0.9709477666135401], [28.21012359134782, 79.83396960396128, 0.9958404417869835], [28.18593313448611, 79.84270375940994, 0.9804428960512105], [28.23146148384236, 79.823354405686, 0.9883085560797393], [28.204205132538497, 79.84655121180108, 1.006263289633901], [28.2078746784489, 79.815716650353, 1.028214141330868], [28.223705889446528, 79.83482621511374, 1.007274063448106], [28.233014015892632, 79.83758796466512, 1.0160408689027827], [28.157984332925366, 79.8457727446922, 1.0102713792960407], [28.22717223194004, 79.83855641894877, 1.006918492346747], [28.199132906474627, 79.81144317991563, 0.983866918031475], [28.242466298916852, 79.81372576584054, 1.0127211985369575], [28.219733633391098, 79.8152570665651, 1.0233549255430685], [28.203229969326475, 79.80107925265182, 1.0145643799328867], [28.177164440235252, 79.81960843659498, 1.0111100802919106], [28.215451495899476, 79.85353548096887, 1.0056138323613446], [28.210971272640563, 79.84563320328391, 1.0100486521959098], [28.22450584007886, 79.81493455632427, 0.9968538721681496], [28.192356294978044, 79.83313773108611, 1.006359575120878], [28.225278831399514, 79.8279925564794, 1.0165354145303975], [28.2014778658396, 79.80711366311775, 1.0132416646210405], [28.209077532538977, 79.85120970436917, 1.0079027263242786], [28.224479776592922, 79.83064113457611, 1.0113402627227281], [28.193900041618914, 79.82169997122362, 0.9901676056017116], [28.192686526196198, 79.8109587207337, 0.98196739614329], [28.18462649372647, 79.80149638403313, 0.9954771413407403], [28.19316018767338, 79.82182246421736, 1.0270679573017807], [28.18273038467101, 79.83250706425696, 0.9881675344233334], [28.2464701021939, 79.82219476822138, 0.9811443647401371], [28.19753208858077, 79.83741178636087, 1.022239029907225], [28.176084254412345, 79.8237515667173, 0.9936567727182829], [28.254694981357765, 79.82568813614357, 0.9963919530491353], [28.213828993142776, 79.80832336368307, 0.9975707897095389], [28.201027013943403, 79.83292603722568, 1.0368174412515718], [28.186239343310294, 79.82216356147411, 1.0024609759601086], [28.157541395842188, 79.81048535229733, 1.028447651637193], [28.221834969787277, 79.80301748192818, 0.9953490949786669]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_00fec3951d144c958c3252c44dd0148b);
+        
+    
+            var layer_control_d0385f50d42d44d5afc1677d4270ac4d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c39e653a00284c46937da072d5af047c,
+                    "stamenterrain" : tile_layer_241835babd1649f4bab8f99d575e7334,
+                    "stamentoner" : tile_layer_4ed79ce81db443e18253d9c0cf3dd92a,
+                    "stamenwatercolor" : tile_layer_447be90531ce4d42aad975f90a775c03,
+                    "cartodbpositron" : tile_layer_656bc463808e4e4696e8e9cf4e11b813,
+                    "cartodbdark_matter" : tile_layer_e2673d71dbe54ce9ab0504375601e182,
+                },
+                overlays :  {
+                    "Heat Map" : feature_group_00fec3951d144c958c3252c44dd0148b,
+                },
+            };
+            L.control.layers(
+                layer_control_d0385f50d42d44d5afc1677d4270ac4d.base_layers,
+                layer_control_d0385f50d42d44d5afc1677d4270ac4d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2868c6a6d4f7405e8819536e2ab0530b);
+            tile_layer_241835babd1649f4bab8f99d575e7334.remove();
+            tile_layer_4ed79ce81db443e18253d9c0cf3dd92a.remove();
+            tile_layer_447be90531ce4d42aad975f90a775c03.remove();
+            tile_layer_656bc463808e4e4696e8e9cf4e11b813.remove();
+            tile_layer_e2673d71dbe54ce9ab0504375601e182.remove();
+        
+</script>
