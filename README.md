@@ -1,3 +1,3 @@
 
-# Geovisualization-Project-using-Python
+# Geovisualization using Python Dash
 
